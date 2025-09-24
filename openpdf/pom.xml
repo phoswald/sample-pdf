@@ -12,10 +12,6 @@
 
   <artifactId>sample-pdf-openpdf</artifactId>
 
-  <properties>
-    <openpdf.version>2.4.0</openpdf.version>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -24,19 +20,9 @@
     </dependency>
     <dependency>
       <groupId>com.github.librepdf</groupId>
-      <artifactId>openpdf</artifactId>
-      <version>${openpdf.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.github.librepdf</groupId>
       <artifactId>openpdf-html</artifactId>
-      <version>${openpdf.version}</version>
+      <version>3.0.0</version>
     </dependency>
-    <!-- <dependency>
-      <groupId>com.github.librepdf</groupId>
-      <artifactId>openpdf-fonts-extra</artifactId>
-      <version>${openpdf.version}</version>
-    </dependency> -->
 
     <!-- Testing -->
     <dependency>
