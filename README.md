@@ -3,6 +3,13 @@
 
 Experiments with PDF generation
 
+Links:
+
+- https://print-css.rocks/
+- https://wiki.selfhtml.org/wiki/Print-CSS
+- https://developer.mozilla.org/en-US/docs/Web/CSS/@page
+- https://developer.mozilla.org/en-US/docs/Web/CSS/@media
+
 ~~~
 $ nginx-start $(pwd) 8080
 $ mvn clean verify
@@ -17,27 +24,36 @@ See:
 
 TODOs:
 
-- use images
-- use tables
-- use CSS styles
-- ensure PDF/A-2 for use in the archiving and long-term preservation
-  - based on a PDF 1.7 (ISO 32000-1)
+- ensure PDF/A for use in the archiving and long-term preservation
+  - based on a PDF 1.4 or 1.7 (ISO 32000-1)
   - check external dependencies
 
 ## OpenPDF
 
-Rendering is pure Java
+Links:
+
+- https://github.com/LibrePDF/OpenPDF
+- https://github.com/LibrePDF/OpenPDF/tree/master/openpdf-html
+
+Rendering is pure Java. 
 
 TODOs:
 
-- specify page format A4
 - disable zip deflate encoding
+- enforcing conformance with PDFA1B does not work
 - how about OpenPDF v3.0.0?
+
+Limitations: 
+
+> Note that Flying Saucer doesn't support Flex, and will likely never support it.
+> The CSS supported is limited to CSS 2.1 and most of CSS paged media.
 
 ## Playwright
 
-Rendering is based on the default Chromium engine
+Links:
 
-TODOs:
+- https://playwright.dev/java/docs/intro
+- https://playwright.dev/java/docs/api/class-page#page-pdf
 
-- specify PDF version 1.7, it is currently 1.4
+Rendering is based on the default Chromium engine. 
+It generates PDF 1.4. Fonts always seem to be embedded.

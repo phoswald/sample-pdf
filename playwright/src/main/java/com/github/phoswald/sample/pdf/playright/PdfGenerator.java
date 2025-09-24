@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Page.PdfOptions;
 
 class PdfGenerator {
 
@@ -21,7 +22,10 @@ class PdfGenerator {
                 Page page = browser.newPage();
                 page.navigate(input.toString());
                 page.waitForURL(input.toString());
-                byte[] buffer = page.pdf(new Page.PdfOptions().setFormat("A4"));
+                PdfOptions options = new PdfOptions()
+                        .setPreferCSSPageSize(true)
+                        .setPrintBackground(true);
+                byte[] buffer = page.pdf(options);
 
                 Files.write(output, buffer);
             }
