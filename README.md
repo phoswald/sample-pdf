@@ -12,15 +12,9 @@ Links:
 
 ~~~
 $ nginx-start $(pwd) 8080
-$ mvn clean verify
-$ file */target/generated/sample.pdf
 ~~~
 
-See:
-
-- http://localhost:8080/web/sample.html
-- http://localhost:8080/openpdf/target/generated/sample.pdf
-- http://localhost:8080/playwright/target/generated/sample.pdf
+See: http://localhost:8080/
 
 ## OpenPDF
 
@@ -28,6 +22,13 @@ Links:
 
 - https://github.com/LibrePDF/OpenPDF
 - https://github.com/LibrePDF/OpenPDF/tree/master/openpdf-html
+
+~~~
+$ mvn clean verify
+$ file docs/generated/sample.pdf
+~~~
+
+See: http://localhost:8080/openpdf/docs/generated/sample.pdf
 
 Rendering is pure Java. The desired PDF version and conformance level can be configured.
 
@@ -45,11 +46,42 @@ Links:
 - https://playwright.dev/java/docs/intro
 - https://playwright.dev/java/docs/api/class-page#page-pdf
 
-Rendering is based on the default Chromium engine.
-This generates PDF version 1.4 with embedded fonts.
-
 ~~~
 $ sudo apt-get install libavif16
 ~~~
 
+~~~
+$ mvn clean verify
+$ file docs/generated/sample.pdf
+~~~
+
+See: http://localhost:8080/playwright/docs/generated/sample.pdf
+
+Rendering is based on the default Chromium engine.
+This generates PDF version 1.4 with embedded fonts.
+
 Cache: `~/.cache/ms-playwright`
+
+## Weasyprint
+
+Links:
+
+- https://weasyprint.org/
+
+~~~
+$ sudo apt install weasyprint
+$ weasyprint --version
+$ weasyprint --help
+$ weasyprint --info
+~~~
+
+~~~
+$ make clean && make all
+$ file docs/generated/sample.pdf
+~~~
+
+See: http://localhost:8080/weasyprint/docs/generated/sample.pdf
+
+Rendering is implemented in Python and NOT based on a browser.
+The desired PDF version and conformance level can be configured.
+This generates PDF version 1.4 with embedded fonts.

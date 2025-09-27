@@ -16,7 +16,7 @@ class PdfGeneratorTest {
     @Test
     void generate() throws URISyntaxException {
         var input = new URI("http://localhost:8080/web/sample.html");
-        var output = Path.of("target/generated/sample.pdf");
+        var output = Path.of("docs/generated/sample.pdf");
 
         testee.generate(input, output);
 

@@ -148,3 +148,7 @@ th, td {
 th.right, td.right {
   text-align: right;
 }
+
+img {
+  width: 150px;
+}
