@@ -12,6 +12,10 @@ Links:
 
 ~~~
 $ nginx-start $(pwd) 8080
+$ mvn -f openpdf    clean verify && \
+  mvn -f playwright clean verify && \
+  (cd weasyprint && make clean && make all)
+$ file */docs/generated/*.pdf
 ~~~
 
 See: http://localhost:8080/
@@ -22,11 +26,6 @@ Links:
 
 - https://github.com/LibrePDF/OpenPDF
 - https://github.com/LibrePDF/OpenPDF/tree/master/openpdf-html
-
-~~~
-$ mvn clean verify
-$ file docs/generated/sample.pdf
-~~~
 
 See: http://localhost:8080/openpdf/docs/generated/sample.pdf
 
@@ -50,11 +49,6 @@ Links:
 $ sudo apt-get install libavif16
 ~~~
 
-~~~
-$ mvn clean verify
-$ file docs/generated/sample.pdf
-~~~
-
 See: http://localhost:8080/playwright/docs/generated/sample.pdf
 
 Rendering is based on the default Chromium engine.
@@ -73,11 +67,6 @@ $ sudo apt install weasyprint
 $ weasyprint --version
 $ weasyprint --help
 $ weasyprint --info
-~~~
-
-~~~
-$ make clean && make all
-$ file docs/generated/sample.pdf
 ~~~
 
 See: http://localhost:8080/weasyprint/docs/generated/sample.pdf
