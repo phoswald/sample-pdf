@@ -1,87 +1,85 @@
 @font-face {
-    font-family: Source Sans Pro;
-    font-weight: normal;
-    src: url(fonts/source-sans-3-regular.ttf);
-    -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  src: url(fonts/source-sans-3-regular.ttf);
+  -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
 }
 @font-face {
-    font-family: Source Sans Pro;
-    font-weight: bold;
-    src: url(fonts/source-sans-3-bold.ttf);
-    -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
+  font-family: Source Sans Pro;
+  font-weight: bold;
+  src: url(fonts/source-sans-3-bold.ttf);
+  -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
 }
 
 @page {
-    size: A4 portrait;
-    margin: 3cm;
+  size: A4 portrait;
+  margin: 3cm;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-@media print {
-    body {
-        margin: 0;
-    }
-}
-
-@media screen {
-    body {
-        margin: 20px;
-    }
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 html {
-    font-family: Source Sans Pro; /* Firefox and Chrome differ here */
-    line-height: 1.25; /* Firefox and Chrome differ here */
+  font-family: Source Sans Pro; /* Firefox and Chrome differ here */
+  line-height: 1.25; /* Firefox and Chrome differ here */
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+}
+@media screen {
+  body {
+    margin: auto;
+    width: 15cm; /* 21cm (A4) - 2*3cm (page margin) */ 
+  }
 }
 
 h1 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    /* outline-style: dotted; */
-    font-size: 32pt;
-    font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* outline-style: dotted; */
+  font-size: 32pt;
+  font-weight: bold;
 }
-
 h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* outline-style: dotted; */
-    font-size: 24pt;
-    font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* outline-style: dotted; */
+  font-size: 24pt;
+  font-weight: bold;
 }
-
 p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    /* outline-style: dotted; */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* outline-style: dotted; */
 }
 td {
-    /* outline-style: dotted; */
+  /* outline-style: dotted; */
+  vertical-align: top;
 }
 
 .layout-w100 {
-    width: 100%;
+  width: 100%;
 }
 .layout-w40 {
-    width: 40%;
+  width: 40%;
 }
 .layout-w20 {
-    width: 20%;
+  width: 20%;
 }
 .layout-h100px {
-    height: 100px;
-    vertical-align: top;
+  height: 100px;
 }
 .layout-r {
-    text-align: right;
+  text-align: right;
 }

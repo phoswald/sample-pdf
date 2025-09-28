@@ -1,168 +1,156 @@
 @font-face {
-    font-family: Source Sans Pro;
-    font-weight: normal;
-    src: url(fonts/source-sans-3-regular.ttf);
-    -fs-pdf-font-embed: embed;
-    /* Flying Saucer custom style */
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  src: url(fonts/source-sans-3-regular.ttf);
+  -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
 }
 @font-face {
-    font-family: Source Sans Pro;
-    font-weight: bold;
-    src: url(fonts/source-sans-3-bold.ttf);
-    -fs-pdf-font-embed: embed;
-    /* Flying Saucer custom style */
+  font-family: Source Sans Pro;
+  font-weight: bold;
+  src: url(fonts/source-sans-3-bold.ttf);
+  -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
 }
 
 @page {
-    size: A4 portrait;
-    margin: 1cm;
+  size: A4 portrait;
+  margin: 1cm;
 
-    @top-left {
-        color: grey;
-        font-family: Source Sans Pro;
-        font-weight: normal;
-        font-size: 8pt;
-        content: 'Page Top Left';
-    }
-    @top-center {
-        color: grey;
-        font-family: Source Sans Pro;
-        font-weight: normal;
-        font-size: 8pt;
-        content: 'Page Top Center';
-    }
-    @top-right {
-        color: grey;
-        font-family: Source Sans Pro;
-        font-weight: normal;
-        font-size: 8pt;
-        content: 'Page Top Right';
-    }
-    @bottom-left {
-        color: grey;
-        font-family: Source Sans Pro;
-        font-weight: normal;
-        font-size: 8pt;
-        content: 'Page Bottom Left';
-    }
-    @bottom-center {
-        color: grey;
-        font-family: Source Sans Pro;
-        font-weight: normal;
-        font-size: 8pt;
-        content: 'Page Bottom Center';
-    }
-    @bottom-right {
-        color: grey;
-        font-family: Source Sans Pro;
-        font-weight: normal;
-        font-size: 8pt;
-        content: 'Page Bottom Right';
-    }
+  @top-left {
+    color: grey;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 8pt;
+    content: 'Page Top Left';
+  }
+  @top-center {
+    color: grey;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 8pt;
+    content: 'Page Top Center';
+  }
+  @top-right {
+    color: grey;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 8pt;
+    content: 'Page Top Right';
+  }
+  @bottom-left {
+    color: grey;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 8pt;
+    content: 'Page Bottom Left';
+  }
+  @bottom-center {
+    color: grey;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 8pt;
+    content: 'Page Bottom Center';
+  }
+  @bottom-right {
+    color: grey;
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-size: 8pt;
+    content: 'Page Bottom Right';
+  }
 }
 
 html {
-    color: black;
-    font-family: Source Sans Pro;
-    font-weight: normal;
-    font-size: 12pt;
+  color: black;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  font-size: 12pt;
 }
 
 @media screen {
-    body {
-        margin: 20px;
-        /* background-color: yellow; */
-    }
+  body {
+    margin: auto;
+    width: 19cm; /* 21cm (A4) - 2*1cm (page margin) */ 
+    position: relative; /* wegen position von dl */
+    /* background-color: yellow; */
+  }
 }
-
 @media print {
-    body {
-        margin: 0;
-        /* background-color: lightgreen; */
-    }
+  body {
+    margin: 0;
+    /* background-color: lightgreen; */
+  }
 }
 
 h1 {
-    color: red;
-    font-weight: bold;
-    font-size: 24pt;
+  color: red;
+  font-weight: bold;
+  font-size: 24pt;
 }
-
 h2 {
-    font-weight: bold;
-    font-size: 18pt;
+  font-weight: bold;
+  font-size: 18pt;
 }
 
 aside {
-    display: block;
-    margin: 2cm 0 2cm 0;
+  display: block;
+  margin: 2cm 0 2cm 0;
 }
-
 aside address {
-    display: inline-block;
-    font-style: normal;
-    width: 40%;
-    white-space: pre-line;
+  display: inline-block;
+  font-style: normal;
+  width: 40%;
+  white-space: pre-line;
 }
 
 dl {
-    position: absolute;
-    right: 0;
-    text-align: left;
-    top: 0;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 0;
 }
 
-dt,
-dd {
-    display: inline;
-    margin: 0;
+dt, dd {
+  display: inline;
+  margin: 0;
 }
-
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 dt::before {
-    content: '';
-    display: block;
+  content: '';
+  display: block;
 }
-
 dt::after {
-    content: ':';
+  content: ':';
 }
 
 table {
-    border-collapse: collapse;
-    margin: 2cm 0 2cm 0;
-    width: 100%;
+  border-collapse: collapse;
+  margin: 2cm 0 2cm 0;
+  width: 100%;
 }
-
 th {
-    border-bottom: 0.2mm solid black;
-    font-weight: bold;
-    padding-bottom: 1mm;
-    background-color: lightgrey;
+  border-bottom: 0.2mm solid black;
+  font-weight: bold;
+  padding-bottom: 1mm;
+  background-color: lightgrey;
 }
-
 td {
-    padding-top: 5mm;
-    background-color: lightgrey;
+  padding-top: 5mm;
+  background-color: lightgrey;
 }
-
-th,
-td {
-    text-align: left;
+th, td {
+  text-align: left;
 }
 
 /* :last-of-type does not work in OpenPDF */
 /* th:last-of-type, td:last-of-type {
-    text-align: right;
+  text-align: right;
 } */
-th.right,
-td.right {
-    text-align: right;
+th.right, td.right {
+  text-align: right;
 }
 
 img {
-    width: 150px;
+  width: 150px;
 }
