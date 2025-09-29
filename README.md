@@ -27,7 +27,11 @@ Links:
 - https://github.com/LibrePDF/OpenPDF
 - https://github.com/LibrePDF/OpenPDF/tree/master/openpdf-html
 
-See: http://localhost:8080/openpdf/docs/generated/sample.pdf
+See:
+
+- [Sample](openpdf/docs/generated/sample.pdf)
+- [Layouts](openpdf/docs/generated/layouts.pdf)
+- [Markdown](openpdf/docs/generated/markdown.pdf)
 
 Rendering is pure Java. The desired PDF version and conformance level can be configured.
 
@@ -52,7 +56,11 @@ Links:
 $ sudo apt-get install libavif16
 ~~~
 
-See: http://localhost:8080/playwright/docs/generated/sample.pdf
+See:
+
+- [Sample](playwright/docs/generated/sample.pdf)
+- [Layouts](playwright/docs/generated/layouts.pdf)
+- [Markdown](playwright/docs/generated/markdown.pdf)
 
 Rendering is based on the default Chromium engine.
 This generates PDF version 1.4 with embedded fonts.
@@ -72,7 +80,11 @@ $ weasyprint --help
 $ weasyprint --info
 ~~~
 
-See: http://localhost:8080/weasyprint/docs/generated/sample.pdf
+See:
+
+- [Sample](weasyprint/docs/generated/sample.pdf)
+- [Layouts](weasyprint/docs/generated/layouts.pdf)
+- [Markdown](weasyprint/docs/generated/markdown.pdf)
 
 Rendering is implemented in Python and NOT based on a browser.
 The desired PDF version and conformance level can be configured.
