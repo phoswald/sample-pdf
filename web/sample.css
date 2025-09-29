@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-weight: normal;
   src: url(fonts/source-sans-3-regular.ttf);
   -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
 }
 @font-face {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-weight: bold;
   src: url(fonts/source-sans-3-bold.ttf);
   -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
@@ -17,42 +17,42 @@
 
   @top-left {
     color: grey;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-weight: normal;
     font-size: 8pt;
     content: 'Page Top Left';
   }
   @top-center {
     color: grey;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-weight: normal;
     font-size: 8pt;
     content: 'Page Top Center';
   }
   @top-right {
     color: grey;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-weight: normal;
     font-size: 8pt;
     content: 'Page Top Right';
   }
   @bottom-left {
     color: grey;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-weight: normal;
     font-size: 8pt;
     content: 'Page Bottom Left';
   }
   @bottom-center {
     color: grey;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-weight: normal;
     font-size: 8pt;
     content: 'Page Bottom Center';
   }
   @bottom-right {
     color: grey;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-weight: normal;
     font-size: 8pt;
     content: 'Page Bottom Right';
@@ -61,7 +61,7 @@
 
 html {
   color: black;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-weight: normal;
   font-size: 12pt;
 }

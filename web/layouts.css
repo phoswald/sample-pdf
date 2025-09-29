@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-weight: normal;
   src: url(fonts/source-sans-3-regular.ttf);
   -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
 }
 @font-face {
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   font-weight: bold;
   src: url(fonts/source-sans-3-bold.ttf);
   -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
@@ -16,14 +16,8 @@
   margin: 3cm;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
 html {
-  font-family: Source Sans Pro; /* Firefox and Chrome differ here */
+  font-family: "Source Sans Pro"; /* Firefox and Chrome differ here */
   line-height: 1.25; /* Firefox and Chrome differ here */
 }
 

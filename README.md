@@ -38,6 +38,9 @@ Font embedding requires the custom CSS style `-fs-pdf-font-embed: embed`.
 Note that Flying Saucer **doesn't support Flex**, and will likely never support it.
 The CSS supported is limited to CSS 2.1 and most of CSS paged media.
 
+Note that `rem` does not work, but `em` can be used instead.
+Also, `.ico` are not displayed, but `.png` and `.jpeg` can be used instead.
+
 ## Playwright
 
 Links:
