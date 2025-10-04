@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="defaults.css">
   <link rel="stylesheet" href="layouts.css">
   <title>Layouts</title>
 </head>
@@ -12,13 +13,103 @@
 
   <h2>Sample Heading Two</h2>
 
-  <p>Sample Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore
+  <h3>Sample Heading Three</h3>
+
+  <h4>Sample Heading Four</h4>
+
+  <h5>Sample Heading Five</h5>
+
+  <h6>Sample Heading Six</h6>
+
+  <p>
+    Sample Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore
     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea
     commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
 
-  <!-- Ohne width und height ist die Tabelle minimal klein -->
+  <p>
+    A paragraph with <a href="">a link</a>, 
+    <strong>strong</strong>, <b>bold</b>, 
+    <em>emphasis</em>, <i>italic</i>,
+    <u>underline</u>, <del>strikethrough</del>,
+    <code>monospace</code> text and a <span>span</span>.
+  </p>
+
+  <p>
+    A paragraph with a break,<br>
+    a subscript: H<sub>2</sub>O is water, and a superscript: <sup>2</sup>H is deuterium.<br>
+    And some more text here...
+  </p>
+
+  <p>
+    A paragraph with an inline image: <img src="images/favicon.jpeg">
+  </p>
+
+  <blockquote>
+    Blockquote Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore
+    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea
+    commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </blockquote>
+  
+  <pre>
+Preformatted Paragraph:
+
+public static void main(String[] args) {
+  System.out.println("Hello, World!");
+}</pre>
+
+  <ol>
+    <li>List item one (ordered)</li>
+    <li>List item two</li>
+    <li>List item three</li>
+    <li>List item four
+      <ol>
+        <li>Sub list item one</li>
+        <li>Sub list item two</li>
+        <li>Sub list item three
+          <ol>
+            <li>Sub sub list item one</li>
+            <li>Sub sub list item two</li>
+            <li>Sub sub list item three
+              <ol>
+                <li>Sub sub sub list item one</li>
+                <li>Sub sub sub list item two</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <ul>
+    <li>List item one (unordered)</li>
+    <li>List item two</li>
+    <li>List item three</li>
+    <li>List item four
+      <ul>
+        <li>Sub list item one</li>
+        <li>Sub list item two</li>
+        <li>Sub list item three
+          <ul>
+            <li>Sub sub list item one</li>
+            <li>Sub sub list item two</li>
+            <li>Sub sub list item three
+              <ul>
+                <li>Sub sub sub list item one</li>
+                <li>Sub sub sub list item two</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>An table with zero border order padding, only cell contents:</p>
+
   <table class="layout-w100">
     <tr>
       <td class="layout-w40">One</td>
@@ -36,6 +127,8 @@
       <td>Nine</td>
     </tr>
   </table>
+
+  <p>SevenEightNine in a paragraph</p>
 </body>
 
 </html>
