@@ -105,6 +105,7 @@ th {
   border-bottom: 0.2mm solid black;
   padding-bottom: 1mm;
   background-color: lightgrey;
+  font-weight: bold;
 }
 
 td {

@@ -4,14 +4,20 @@
   margin: 3cm;
 }
 
-@media screen {
+@media screen and (min-width: 1020px) {
   body {
     margin: auto;
-    width: 15cm; /* 21cm (A4) - 2*3cm (page margin) */ 
+    width: 1000px;
   }
 }
 
-/* layout classes */
+/* fonts */
+
+.serif {
+  font-family: "Noto Serif";
+}
+
+/* layout: width and height */
 
 .layout-w100 {
   width: 100%;
@@ -25,10 +31,55 @@
   width: 20%;
 }
 
+.layout-w100px {
+  width: 100px;
+}
+
+.layout-w200px {
+  width: 200px;
+}
+
 .layout-h100px {
   height: 100px;
 }
 
-.layout-r {
+.layout-h200px {
+  height: 200px;
+}
+
+/* layout: alignment */
+
+.layout-center {
+  text-align: center;
+}
+
+.layout-right {
   text-align: right;
+}
+
+.layout-middle {
+  vertical-align: middle;
+}
+
+.layout-bottom {
+  vertical-align: bottom;
+}
+
+/* layout: table */
+
+table.layout-table tr th {
+  border-bottom: 1px solid black;
+  padding: .375em .75em .375em .75em;
+  font-weight: bold;
+}
+
+table.layout-table tr td {
+  border-bottom: 1px solid lightgrey;
+  padding: .375em .75em .375em .75em;
+}
+
+/* layout: page break */
+
+.layout-page-break-before {
+  page-break-before: always;
 }

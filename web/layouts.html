@@ -34,10 +34,26 @@
     <em>emphasis</em>, <i>italic</i>,
     <u>underline</u>, <del>strikethrough</del>,
     <code>monospace</code> text and a <span>span</span>.
+    And also with a break:<br>
+    a subscript: H<sub>2</sub>O is water, and a superscript: <sup>2</sup>H is deuterium.<br>
+    And some more text here...
   </p>
 
-  <p>
-    A paragraph with a break,<br>
+  <p class="serif">
+    Sample Paragraph with a serif font: 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore
+    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea
+    commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <p class="serif">
+    A paragraph with a serif font with <a href="">a link</a>, 
+    <strong>strong</strong>, <b>bold</b>, 
+    <em>emphasis</em>, <i>italic</i>,
+    <u>underline</u>, <del>strikethrough</del>,
+    <code>monospace</code> text and a <span>span</span>.
+    And also with a break:<br>
     a subscript: H<sub>2</sub>O is water, and a superscript: <sup>2</sup>H is deuterium.<br>
     And some more text here...
   </p>
@@ -45,6 +61,8 @@
   <p>
     A paragraph with an inline image: <img src="images/favicon.jpeg">
   </p>
+
+  <p class="layout-page-break-before">A paragraph on a new page:</p>
 
   <blockquote>
     Blockquote Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore
@@ -108,15 +126,33 @@ public static void main(String[] args) {
     </li>
   </ul>
 
-  <p>An table with zero border order padding, only cell contents:</p>
+  <p class="layout-page-break-before">A table with zero border order padding, only cell contents:</p>
 
   <table class="layout-w100">
     <tr>
-      <td class="layout-w40">One</td>
-      <td class="layout-w40">Two</td>
-      <td class="layout-w20 layout-r">Three</td>
+      <td class="layout-w40">Nothing</td>
+      <td class="layout-w40 layout-center">Center Aligned</td>
+      <td class="layout-w20 layout-right">Right Aligned</td>
     </tr>
     <tr class="layout-h100px">
+      <td>With height</td>
+      <td class="layout-middle">Middle Aligned</td>
+      <td class="layout-bottom">Bottom Aligned</td>
+    </tr>
+    <tr>
+      <td><img src="images/html5-logo.png" class="layout-w100px"></td>
+      <td><img src="images/css3-logo.png" class="layout-w100px"></td>
+      <td>Top Aligned</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+      <td>Three</td>
+    </tr>
+    <tr>
       <td>Four</td>
       <td>Five</td>
       <td>Six</td>
@@ -128,7 +164,37 @@ public static void main(String[] args) {
     </tr>
   </table>
 
-  <p>SevenEightNine in a paragraph</p>
+  <p>SevenEightNine in a paragraph (compare it to the invisible table above). And nice table:</p>
+
+  <table class="layout-table">
+    <tr>
+      <th class="layout-w200px">Description</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th class="layout-right">Subtotal</th>
+    </tr>
+    <tr>
+      <td>Website design</td>
+      <td>€34.20</td>
+      <td>100</td>
+      <td class="layout-right">€420.00</td>
+    </tr>
+    <tr>
+      <td>Website development</td>
+      <td>€45.50</td>
+      <td>100</td>
+      <td class="layout-right">€4,550.00</td>
+    </tr>
+    <tr>
+      <td>Website integration</td>
+      <td>€25.75</td>
+      <td>100</td>
+      <td class="layout-right">€2,575.00</td>
+    </tr>
+  </table>
+
+  <p>This is the last paragraph.</p>
+
 </body>
 
 </html>

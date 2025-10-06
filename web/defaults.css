@@ -20,6 +20,13 @@
   -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
 }
 
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: normal;
+  src: url(fonts/NotoSerif-Regular.ttf); /* downloaded from https://fonts.google.com/ */
+  -fs-pdf-font-embed: embed; /* Flying Saucer custom style */
+}
+
 /* block elements */
 
 html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, ol, ul, li, table, thead, tbody, tr, th, td {
@@ -106,13 +113,7 @@ table {
   border-collapse: collapse;
 }
 
-th {
-  vertical-align: top;
-  text-align: left;
-  font-weight: bold;
-}
-
-td {
+th, td {
   vertical-align: top;
   text-align: left;
   font-weight: normal;
