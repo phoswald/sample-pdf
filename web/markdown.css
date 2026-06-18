@@ -16,7 +16,7 @@
   }
 }
 
-@media screen {
+@media screen and (min-width: 896px) {
   body {
     margin: 20px auto 20px auto;
     border: 1px;
